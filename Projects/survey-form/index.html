@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Avengers Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the Avengers!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="Fan">Fan</option>
+        <option value="producer">Producer</option>
+        <option value="director">Director</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Avengers to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite Character of Avengers?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="iron_man">Iron Man</option>
+        <option value="captain_america">Captain America</option>
+        <option value="thor">Thor</option>
+        <option value="hulk">Hulk</option>
+        <option value="black_widow">Black Widow</option>
+        <option value="hawkeye">Hawkeye</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="iron-man-suit"
+          type="checkbox"
+          class="input-checkbox"
+        />Iron Man's Suit</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="captain-america-shield"
+          type="checkbox"
+          class="input-checkbox"
+        />Captain America's Shield</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="thor-mjolnir"
+          type="checkbox"
+          class="input-checkbox"
+        />Thor's Mjolnir</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hulk-body"
+          type="checkbox"
+          class="input-checkbox"
+        />Hulk's Body</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="black-widows-kung-fu"
+          type="checkbox"
+          class="input-checkbox"
+        />Black Widows fighting Tecnique</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hawkeye-bow"
+          type="checkbox"
+          class="input-checkbox"
+        />Hawkeye`s Bow and Arrows</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
